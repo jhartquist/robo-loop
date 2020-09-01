@@ -2,9 +2,7 @@ import * as Tone from 'tone'
 
 export const drumPlayers = new Tone.Players(
   {
-    kick: '/sounds/drumkit/kick.mp3',
-    snare: '/sounds/drumkit/snare3.mp3',
-    hatClosed: '/sounds/drumkit/hatClosed.mp3',
+    hatClosed: 'https://teropa.info/ext-assets/drumkit/hatClosed.mp3',
   },
   () => {
     console.log('loaded drums')
@@ -45,7 +43,7 @@ export const pianoSampler = new Tone.Sampler({
     C8: 'C8.mp3',
   },
   release: 1,
-  baseUrl: '/sounds/salamander/',
+  baseUrl: 'https://tonejs.github.io/audio/salamander/',
   onload: () => {
     console.log('loaded piano')
   },
